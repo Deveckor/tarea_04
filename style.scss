@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=M+PLUS+1+Code:wght@500&family=Roboto:wght@300&display=swap');
+$color_font_card: white;
+$color_button: #d22030;
+$color_font_title: #0a3f5d;
+$color_font_p: #889ab6;
+$background_circle: #fdb73f;
+$background: #c6d5da;
+$font: 'Lato', sans-serif;
+$mobile: 768px;
+
+*{
+    margin: 0;
+    font-family: $font;
+}
+
+#containerOne{
+    
+    background-image: url(./assets/mujer-trabajando-desde-su-casa.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height: 500px;
+    padding-top: 4rem;
+    padding-left: 6rem;
+    color: $color_font_card;
+    img{
+        width: 20px;
+        height: 20px;
+    }
+    span{
+        margin-left: 0.5rem;
+        
+    }
+    h1{
+        margin-top: 2vh;
+        font-size: 5vh;
+    }
+    p{
+        margin-top: 1rem;
+        width: 60%;
+    }
+    button{
+        margin-top: 2rem;
+    }
+}
+.btn{
+    border: none;
+    color: $color_font_card;
+    font-family: $font;
+    background-color: $color_button;
+    font-size: small;
+    border-radius: 5px;
+    width: 25vw;
+    height: 2.5rem;
+    cursor: pointer;
+}
+.btn:hover{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
+}
+svg{
+    width: 2rem;
+    height: 2rem;
+    fill: $color_font_title;
+}
+#conteinerTwo{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    div{
+        width: 26vw;
+        h4{
+            margin-top: 1rem;
+            color: $color_font_title;
+        }
+        p{
+            color: $color_font_p;
+            font-size: small;
+            margin-top: 1rem;
+            text-align:justify;
+        }
+    }
+
+}
+
+h3{
+    color: $color_font_title;
+    text-align:center ;
+    margin-top: 4rem;
+}
+#containerThree{
+    display: flex;
+    justify-content: center;
+    
+
+    .circle{
+        
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        background-color: $background_circle;
+        color: $color_font_card;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .line{
+        
+        background-color: $background_circle;
+        margin-top: 4rem;
+        height: 4px;
+        width: 28%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+#containerFour{
+    display: flex;
+    justify-content: space-around;
+    
+    .cards{
+        width: 26%;
+        text-align:justify ;
+
+        h4{
+            color: $color_font_title;
+            text-align: center;
+        }
+        p{
+            margin-top: 1rem;
+            color: $color_font_p;
+            font-size: small;
+            text-align: center;
+        }
+    }
+}
+
+#containerFive{
+    margin-top: 6rem;
+    background-color: $background;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        margin-top: 2rem;
+        color: $color_font_title;
+    }
+    p{
+        margin-top: 2rem;
+        text-align: center;
+        width: 60%;
+        color: $color_font_p;
+    }
+    button{
+        margin-top: 3rem;
+    }
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 3rem;
+
+    aside{
+        width: 25%;
+        display: flex;
+        justify-content: right;
+        margin-right: 1rem;
+        img{
+            width: 25px;
+            height: 25px;
+        }
+    }
+    
+}
+#containerSix{
+    display: flex;
+    justify-content: space-around;
+    
+    div{
+        width: 25%;
+        h5{
+            color: $color_font_title;
+            margin-bottom: 1rem;
+        }
+        h6{
+            
+            text-align: justify;
+            color: $color_font_p;
+        }
+        
+
+    }
+}
+#copyright{
+    color: $color_font_p;
+    text-align: right;
+    margin-top: 0.8rem;
+    margin-bottom: 0.5rem;
+    margin-right: 1rem;
+    font-size: xx-small;
+}
+
+/*Mobile responsive*/
+@media (max-width: $mobile) {
+    
+    #containerOne{
+        padding-top: 1rem;
+        padding-left: 2rem;
+        background-size: 180vw;
+        
+        
+        color: $color_font_card;
+        h1{
+            font-size: 8vw;
+        }
+        span{
+            font-size: 4vw;
+        }
+        p{
+            font-size: 3vw;
+            text-align: justify;
+        }
+        button{
+            margin-bottom: .05rem;
+        }
+    }
+    .btn{
+        font-size: 2vw;
+    }
+
+    footer{
+        h5{
+            font-size: 2.5vw;
+        }
+        h6{
+            font-size: 1.5vw;
+        }
+    }
+}
